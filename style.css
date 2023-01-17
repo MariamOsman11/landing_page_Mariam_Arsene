@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+.header-img img {
+  width: 220px;
+}
+#nav-bar ul {
+  display: flex;
+}
