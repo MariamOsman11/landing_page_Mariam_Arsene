@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 body {
   background-color: #eee;
@@ -10,13 +11,88 @@ body {
 #header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
 }
 .header-img img {
-  width: 220px;
+  width: 20rem;
 }
 #nav-bar ul {
+  list-style: none;
   display: flex;
 }
-p {
+
+#nav-bar ul li {
+  padding: 0 5rem;
+  margin: 0;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  width: 100%;
+  text-transform: capitalize;
+  color: #000;
+}
+
+section {
+  width: 70%;
+  margin: auto;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  border: 0;
+  padding: .5em;
   
+}
+
+input[type=email] {
+  border: 1px solid #000;
+  width: 20rem;
+  margin: 1em;
+}
+
+input[type=submit] {
+  background-color: rgb(241, 196, 14);
+  cursor: pointer;
+  width: 10rem;
+  font-weight: bolder;
+  transition: 300ms;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(219, 156, 9);
+}
+
+.some-icons {
+  margin-top: 5rem;
+}
+
+.item {
+  display: flex;
+  margin: 3rem;
+}
+
+.item span {
+width: 5rem;
+  margin-right: 1rem;
+}
+
+.item span .fa-solid {
+  color: darkorange;
+  font-size: 3rem;
+}
+
+.item-descr h2 {
+  margin-bottom: .5rem;
 }
