@@ -13,15 +13,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <!-- HEADER -->
+
     <header id="header">
       <div class="header-img">
         <img src="product-landing-page-logo.png" alt="" />
       </div>
       <nav id="nav-bar">
         <ul>
-          <li id="nav-link"><a href="">Features</a></li>
-          <li id="nav-link"><a href="">How it works</a></li>
-          <li id="nav-link"><a href="">Pricing</a></li>
+          <li id="nav-link"><a href="#features">Features</a></li>
+          <li id="nav-link"><a href="#howItWorks">How it works</a></li>
+          <li id="nav-link"><a href="#pricing">Pricing</a></li>
         </ul>
       </nav>
     </header>
@@ -39,7 +42,9 @@
         </div>
       </form>
 
-      <div class="some-icons">
+      <!-- ICONS AND DESCRIPTION SECTION -->
+
+      <div class="some-icons" id="features">
         <div class="item1 item">
           <span><i class="fa-solid fa-fire-flame-curved"></i></span>
           <div class="item-descr">
@@ -72,10 +77,12 @@
           </div>
         </div>
       </div>
-      <div>
+
+      <!-- YOUTUBE VIDEO SECTION -->
+
+      <div id="howItWorks">
         <iframe
-          width="560"
-          height="315"
+          
           src="https://www.youtube.com/embed/y8Yv4pnO7qc"
           title="YouTube video player"
           frameborder="0"
@@ -84,31 +91,44 @@
         ></iframe>
       </div>
 
-      <div class="cards">
+      <!-- CARDS SECTION -->
+      <div class="cards" id="pricing">
         <div class="card">
-          <h3>TENOR TROMBONE</h3>
-          <h3>$600</h3>
-          <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum</p>
+          <h4>TENOR TROMBONE</h4>
+          <p class="price">$600</p>
+          <p>Lorem ipsum. <br> Lorem ipsum. <br> Lorem ipsum dolor. <br> Lorem ipsum</p>
 
           <button>SELECT</button>
         </div>
 
         <div class="card">
-          <h3>TENOR TROMBONE</h3>
-          <h3>$900</h3>
-          <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum</p>
+          <h4>TENOR TROMBONE</h4>
+          <p class="price">$900</p>
+          <p>Lorem ipsum. <br> Lorem ipsum. <br> Lorem ipsum dolor. <br> Lorem ipsum</p>
 
           <button>SELECT</button>
         </div>
 
         <div class="card">
-          <h3>VALVE TROMBONE</h3>
-          <h3>$1200</h3>
-          <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum</p>
+          <h4>VALVE TROMBONE</h4>
+          <p class="price">$1200</p>
+          <p>Plays similar to a Trumpet <br> Great for Jazz Bands <br> Lorem ipsum dolor. <br> Lorem ipsum</p>
 
           <button>SELECT</button>
         </div>
       </div>
+
+      <!-- FOOTER SECTION -->
+
+    <footer>
+        <ul class="footer-links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      <p>Copyright 2016, Original Trombones</p>
+    </footer>
+
     </section>
 
     <script

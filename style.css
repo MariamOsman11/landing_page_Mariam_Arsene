@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
 * {
   margin: 0;
   padding: 0;
@@ -12,8 +14,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem 2rem;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background-color: #eee;
 }
+
+
 .header-img img {
   width: 20rem;
 }
@@ -34,10 +42,22 @@ body {
   color: #000;
 }
 
+/* header responsiveness */
+@media (min-width: 300px) and (max-width: 700px) {
+  #header {
+    flex-direction: column;
+    position: static;
+    width: 100% !important;
+  }
+  #nav-bar ul {
+    flex-direction: column;
+  }
+}
+
 section {
   width: 70%;
   margin: auto;
-  /* background-color: aqua; */
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +66,7 @@ section {
 
 
 #inputs {
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,14 +80,14 @@ input {
 input[type=email] {
   border: 1px solid #000;
   width: 20rem;
-  margin: 1em;
+  margin: 2em;
 }
 
 input[type=submit] {
   background-color: rgb(241, 196, 14);
   cursor: pointer;
   width: 10rem;
-  font-weight: bolder;
+  font-weight: 700;
   transition: 300ms;
 }
 
@@ -74,13 +95,27 @@ input[type=submit]:hover {
   background-color: rgb(219, 156, 9);
 }
 
+/* Inputs responsiveness */
+@media (min-width: 300px) and (max-width: 700px) {
+  #inputs {
+    margin: 0;
+  }
+ section {
+  width: 100%;
+  padding: 0 1rem;
+ }
+}
+
+
+/* ICONS */
+
 .some-icons {
   margin-top: 5rem;
 }
 
 .item {
   display: flex;
-  margin: 3rem;
+  margin: 4rem;
 }
 
 .item span {
@@ -95,4 +130,124 @@ width: 5rem;
 
 .item-descr h2 {
   margin-bottom: .5rem;
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .item {
+   flex-direction: column;
+   margin: 1rem 0;
+ 
+   /* text-align: center; */
+  }
+  .item span {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+ }
+
+/* YOUTUBE */
+
+#howItWorks iframe{
+  width:560px;
+  height:350px;
+}
+
+  @media (min-width: 300px) and (max-width: 700px) {
+    #howItWorks iframe{
+      max-width: 100%;
+    }
+}
+
+.cards {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.card {
+  border: 1px solid #000;
+  /* padding: 0 3rem; */
+  width: 20rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+
+.card h4 {
+  background-color: #ddd;
+  padding: 1rem;
+}
+
+.card .price {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  
+}
+
+.card p {
+  line-height: 2rem;
+}
+
+.card button {
+  background-color: rgb(241, 196, 14);
+  border: 0;
+  padding: 0.7rem 2rem;
+  margin: 1rem 0;
+
+}
+
+/* Cards responsiveness */
+@media (min-width: 300px) and (max-width: 700px) {
+  .cards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+ }
+ @media (min-width: 701px) and (max-width: 850px) {
+  .cards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+ }
+
+footer {
+  background-color: #ddd;
+  width: 77%;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0.7rem;
+}
+.footer-links li {
+  margin: 0 0.8rem;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer p {
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color: rgb(125, 125, 125);
 }
